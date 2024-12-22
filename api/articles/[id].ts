@@ -371,6 +371,10 @@ const articles = [
 ];
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   const { id } = req.query;
 
   const article = articles.find((a) => a.id === id);
