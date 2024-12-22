@@ -127,7 +127,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       "date": "2024-12-06",
       "title": "Semua yang Perlu Anda Ketahui Tentang Hipertensi",
       "picture": "/images/article-hypertension.webp"
-    }
+    },
   ];
 
   res.status(200).json({
